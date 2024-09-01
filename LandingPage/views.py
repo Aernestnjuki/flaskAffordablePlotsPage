@@ -31,6 +31,12 @@ def index():
             new_client.land_location = land_location
             new_client.budget = budget
 
+            all_phone = CustomerInformation.query.filter_by(phone_number=phone_number).first()
+
+            if all_phone:
+                flash(f"This phone number {phone_number} is available. Please enter another number", category='danger')
+                return redirect(url_for('views.index'))
+
             if len(str(phone_number)) != 12 and str(phone_number)[0] != 2 and str(phone_number)[1] != 5 and str(phone_number)[2] != 4:
                 flash('Your phone number should start with +254, try again!!!', category='danger')
                 return redirect(url_for('views.index'))
