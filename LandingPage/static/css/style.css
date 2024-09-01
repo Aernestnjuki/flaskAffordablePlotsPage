@@ -57,7 +57,7 @@
 }
 
 .carousel-item .carousel-caption h1{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -211,5 +211,14 @@
         margin-top: 25px;
     }
     
+    .navbar-light .navbar-brand{
+        font-size: 15px;
+    }
+
+    .carousel-item .carousel-caption h1{
+        font-size: 20px;
+    }
+    
 }
+  
   
