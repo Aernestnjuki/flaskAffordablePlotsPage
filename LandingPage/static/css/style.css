@@ -148,6 +148,16 @@
     padding: 8px 25px;
 }
 
+.about-project img{
+    width: 500px; 
+    height: 300px;
+}
+
+.about-project video{
+    height: 500px; 
+    width: 500px
+}
+
 #get-intouch h2{
     font-size: 40px;
     color: rgb(228, 150, 7);
@@ -218,7 +228,16 @@
     .carousel-item .carousel-caption h1{
         font-size: 20px;
     }
+
+    .about-project img{
+        width: 250px; 
+        height: 250px;
+    }
+    
+    .about-project video{
+        height: 250px; 
+        width: 250px
+    }
     
 }
-  
   
